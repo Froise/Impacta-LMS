@@ -8,17 +8,17 @@ body {
 	align-items: center;
 	align-content: center;
     background-image: url("img/fundo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
     margin: 0;
     background-color:white;
-    color:white;
-    width: 100%
+    color:black;
+    width: 100%;
+    overflow-x: hidden
 }
 
 
 body p{
-    color: white;
+    color: black;
 }
 body h2{
     color: gold;
@@ -27,7 +27,7 @@ body h1{
     color: gold;
 }
 body blockquote{
-    color: white;
+    color: gray;
 }
 /* CSS DO CEBEÇALHO */
 header{
@@ -42,8 +42,8 @@ header{
 }
 
 #cabecalho img{
-    width: 10%;
-    height: 25px;
+    width: 60px;
+    height: 60px;
 }
 
 nav{
@@ -63,6 +63,11 @@ nav ul{
 
 .cor_menu{
     color: white;
+    text-decoration: none;
+}
+.cor_menu:hover{
+    background-color:rgba(240, 233, 233, 0.233);
+    border-radius: 5%;
 }
 
 /*CSS de rodapé*/
@@ -72,7 +77,7 @@ footer {
     bottom: 0;
     left: 0;
     padding: 1rem;
-    background-color: black;
+    background-color: rgba(94, 91, 91, 0.39);
     text-align: center;
     width: 100%;
 }
@@ -115,6 +120,6 @@ footer {
     }
     a{
         text-decoration: none;
-        color:white;
+        color:rgb(87, 84, 84);
     }
 }
