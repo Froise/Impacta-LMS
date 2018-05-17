@@ -70,7 +70,7 @@ align-content: center;
 
 #dlog, #pwd, #email, #rem, #dbut{
 border-radius: 0px;
-color: white;
+color: gray;
 padding: 4px;
 
 }
