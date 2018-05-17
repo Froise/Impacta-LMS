@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect
-
 from contas.models import Usuario
 
 def listaUsuarios(request):
@@ -24,5 +23,3 @@ def novoUsuario(request):
             context['erro'] = ' As senhas não conferem!'
 
     return render(request, 'formUsuario.html' ,context)
-
-# Create your views here.
