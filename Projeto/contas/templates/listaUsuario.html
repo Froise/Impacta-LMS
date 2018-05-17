@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+    <h1>Lista de Usuários</h1>
+    <a href='/contas/novo/'>Novo Usuario</a>
+    <div >
+    <table border='1' width='600px' >
+        <tr>
+            <th>Ações</th>
+            <th>Email</th>
+        </tr>
+    {% for usu  in usuarios  %}
+        <tr>
+            <td>
+                <a href='/contas/alterar/{{ usu.id }}'>Alterar</a><br/>
+                <a href='/contas/alterar/{{ usu.id }}'>Remover</a>
+            </td>
+            <td>{{ usu.email }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    </div>
+{% endblock conteudo %}
