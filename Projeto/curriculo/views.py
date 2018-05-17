@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 from curriculo.models import Curso, Disciplina
 
-# Create your views here.
 def listaCursos(request):
     contexto ={
         "cursos":Curso.objects.all()
